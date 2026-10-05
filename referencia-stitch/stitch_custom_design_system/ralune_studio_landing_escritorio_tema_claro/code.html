@@ -1,0 +1,578 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="es" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Ralune Studio — El umbral de las ideas</title>
+<!-- Fonts: Fraunces & Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config verbatum -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-tertiary": "#ffffff",
+            "primary-container": "#1f5a45",
+            "on-secondary": "#ffffff",
+            "on-primary": "#ffffff",
+            "brand-sage-light": "#9CCFBB",
+            "brand-sage-dark": "#557A6B",
+            "secondary-fixed": "#6efda0",
+            "outline-variant": "#bfc9c2",
+            "surface-container-high": "#ebe8e0",
+            "primary-fixed": "#b3efd3",
+            "on-tertiary-fixed": "#002117",
+            "secondary": "#006d38",
+            "primary": "#00422f",
+            "brand-charcoal": "#1B1F1E",
+            "surface": "#fcf9f1",
+            "brand-sand": "#DCCFB8",
+            "inverse-on-surface": "#f4f1e9",
+            "brand-stone": "#B7B8B0",
+            "error": "#ba1a1a",
+            "outline": "#707974",
+            "brand-forest-light": "#1F5A45",
+            "on-primary-container": "#94cfb4",
+            "on-error": "#ffffff",
+            "secondary-fixed-dim": "#4ee086",
+            "inverse-primary": "#98d3b8",
+            "brand-ivory": "#EDE6D9",
+            "surface-bright": "#fcf9f1",
+            "on-tertiary-container": "#9bceba",
+            "on-primary-fixed-variant": "#13503c",
+            "brand-emerald-dark": "#10C16B",
+            "on-secondary-container": "#00723b",
+            "on-secondary-fixed-variant": "#005229",
+            "on-surface-variant": "#404944",
+            "tertiary-fixed": "#baeed9",
+            "surface-variant": "#e5e2da",
+            "brand-smoke": "#6B7370",
+            "on-tertiary-fixed-variant": "#1d4f40",
+            "surface-container-low": "#f6f3eb",
+            "on-error-container": "#93000a",
+            "on-secondary-fixed": "#00210d",
+            "surface-container-lowest": "#ffffff",
+            "brand-forest-dark": "#0F3D2E",
+            "secondary-container": "#6bfa9d",
+            "surface-tint": "#2f6953",
+            "surface-container": "#f1eee6",
+            "error-container": "#ffdad6",
+            "primary-fixed-dim": "#98d3b8",
+            "tertiary-fixed-dim": "#9ed1bd",
+            "tertiary": "#0c4133",
+            "surface-container-highest": "#e5e2da",
+            "on-surface": "#1c1c17",
+            "background": "#fcf9f1",
+            "on-primary-fixed": "#002116",
+            "brand-cream": "#F3F0E8",
+            "on-background": "#1c1c17",
+            "surface-dim": "#dddad2",
+            "tertiary-container": "#285949",
+            "inverse-surface": "#31312b",
+            "brand-emerald-light": "#23C16B"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-md": "1rem",
+            "space-2xs": "0.25rem",
+            "margin": "4rem",
+            "margin-mobile": "1.5rem",
+            "gutter-mobile": "1rem",
+            "space-xs": "0.5rem",
+            "margin-tablet": "2.5rem",
+            "space-3xl": "4rem",
+            "space-lg": "1.5rem",
+            "space-4xl": "6rem",
+            "space-sm": "0.75rem",
+            "space-2xl": "3rem",
+            "space-xl": "2rem",
+            "gutter": "1.5rem"
+          },
+          "fontFamily": {
+            "headline-xl": ["Fraunces"],
+            "label-sm": ["Inter"],
+            "body-lg": ["Inter"],
+            "body-md": ["Inter"],
+            "title-lg": ["Fraunces"],
+            "headline-italic-capsule-mobile": ["Fraunces"],
+            "headline-lg-mobile": ["Fraunces"],
+            "body-sm": ["Inter"],
+            "headline-lg": ["Fraunces"],
+            "display-hero-mobile": ["Fraunces"],
+            "headline-xl-mobile": ["Fraunces"],
+            "caption": ["Inter"],
+            "headline-md": ["Fraunces"],
+            "headline-italic-capsule": ["Fraunces"],
+            "label-md": ["Inter"],
+            "display-hero": ["Fraunces"]
+          },
+          "fontSize": {
+            "headline-xl": ["56px", { "lineHeight": "62px", "letterSpacing": "-0.025em", "fontWeight": "400" }],
+            "label-sm": ["13px", { "lineHeight": "18px", "letterSpacing": "0.03em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "body-md": ["16px", { "lineHeight": "25px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "title-lg": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "headline-italic-capsule-mobile": ["44px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "400" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "400" }],
+            "body-sm": ["14px", { "lineHeight": "21px", "letterSpacing": "0.005em", "fontWeight": "400" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "display-hero-mobile": ["48px", { "lineHeight": "52px", "letterSpacing": "-0.025em", "fontWeight": "400" }],
+            "headline-xl-mobile": ["36px", { "lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "caption": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "400" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "headline-italic-capsule": ["86px", { "lineHeight": "92px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "label-md": ["15px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+            "display-hero": ["92px", { "lineHeight": "96px", "letterSpacing": "-0.03em", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    @keyframes marquee {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-50%); }
+    }
+    .animate-marquee {
+      display: flex;
+      width: 200%;
+      animation: marquee 28s linear infinite;
+    }
+    .marquee-paused {
+      animation-play-state: paused;
+    }
+  </style>
+</head>
+<body class="bg-background text-brand-charcoal antialiased selection:bg-brand-sage-light/40 selection:text-primary">
+<!-- TOP APP BAR (Shared Component: TopNavBar) -->
+<header class="fixed top-6 inset-x-0 mx-auto rounded-full max-w-5xl z-50 px-4 md:px-0">
+<nav class="bg-brand-cream/85 dark:bg-brand-forest-dark/80 backdrop-blur-md rounded-full border border-brand-stone/35 dark:border-brand-smoke/30 shadow-[0_8px_32px_-8px_rgba(27,31,30,0.06)] flex justify-between items-center px-8 py-3.5 w-full transition-all">
+<!-- Brand Logo -->
+<a class="text-title-lg font-title-lg tracking-tight text-brand-charcoal dark:text-brand-ivory flex items-center gap-2" href="#">
+<span class="">Ralune Studio</span>
+</a>
+<!-- Desktop Navigation Links -->
+<div class="hidden md:flex items-center gap-8">
+<a class="text-label-md font-label-md text-brand-charcoal/70 dark:text-brand-ivory/70 hover:text-brand-charcoal dark:hover:text-brand-ivory transition-colors" href="#disciplinas">Disciplinas</a>
+<a class="text-label-md font-label-md text-brand-charcoal/70 dark:text-brand-ivory/70 hover:text-brand-charcoal dark:hover:text-brand-ivory transition-colors" href="#exploraciones">Exploraciones</a>
+<a class="text-label-md font-label-md text-brand-charcoal/70 dark:text-brand-ivory/70 hover:text-brand-charcoal dark:hover:text-brand-ivory transition-colors" href="#el-estudio">El Estudio</a>
+<a class="text-label-md font-label-md text-brand-charcoal/70 dark:text-brand-ivory/70 hover:text-brand-charcoal dark:hover:text-brand-ivory transition-colors" href="#contacto">Contacto</a>
+</div>
+<!-- Trailing Action -->
+<div class="flex items-center gap-3">
+<a class="scale-100 hover:scale-[1.02] active:scale-[0.97] transition-transform duration-150 inline-flex items-center justify-center bg-primary-container text-brand-ivory text-label-md font-label-md px-6 py-2.5 rounded-full hover:opacity-90" href="#contacto">
+<span class="">Iniciar proyecto</span>
+</a>
+</div>
+</nav>
+</header>
+<!-- MAIN CANVAS -->
+<main class="w-full overflow-hidden pt-36 md:pt-44">
+<!-- 1. HERO VIEWPORT -->
+<section class="max-w-7xl mx-auto px-6 md:px-margin pt-6 pb-space-3xl md:pb-space-4xl flex flex-col items-center text-center">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container border border-brand-stone/30 mb-8">
+<span class="w-2 h-2 rounded-full bg-brand-emerald-light animate-pulse"></span>
+<span class="text-caption font-caption text-brand-forest-light tracking-wide">Estudio creativo &amp; tecnológico</span>
+</div>
+<!-- Main Monumental Editorial Title -->
+<h1 class="text-display-hero-mobile md:text-display-hero font-display-hero text-brand-charcoal tracking-tight max-w-5xl leading-tight">
+<span class="">Buenas ideas.</span><br>
+<span class="inline-flex flex-wrap items-center justify-center gap-3 md:gap-4 mt-2">
+<span class="">Mejores</span>
+<span class="inline-flex items-center justify-center bg-primary-container text-brand-ivory font-headline-italic-capsule text-headline-italic-capsule-mobile md:text-headline-italic-capsule italic px-6 md:px-8 py-1 md:py-2 rounded-full shadow-sm align-middle tracking-normal transition-all duration-300" id="variable-word-capsule" style="opacity: 1; transform: translateY(0px);">realidades.</span>
+</span>
+</h1>
+<!-- Positioning Statement -->
+<p class="mt-8 text-body-lg font-body-lg text-on-surface-variant max-w-2xl mx-auto text-balance">
+        Tecnología diseñada alrededor de tu negocio. Unimos estrategia, diseño y desarrollo para dar forma a lo que imaginas.
+      </p>
+<!-- Action Buttons -->
+<div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
+<a class="w-full sm:w-auto scale-100 hover:scale-[1.02] active:scale-[0.97] transition-transform duration-150 inline-flex items-center justify-center bg-brand-forest-light text-brand-ivory text-label-md font-label-md px-8 py-3.5 rounded-full shadow-[0_12px_24px_-8px_rgba(31,90,69,0.25)] hover:bg-brand-forest-dark" href="#exploraciones">
+<span class="">Explorar conceptos</span>
+<span class="material-symbols-outlined ml-2 text-[18px]">arrow_downward</span>
+</a>
+<a class="w-full sm:w-auto scale-100 hover:scale-[1.02] active:scale-[0.97] transition-transform duration-150 inline-flex items-center justify-center border border-brand-forest-light/35 bg-transparent hover:bg-brand-sage-light/15 text-brand-forest-light text-label-md font-label-md px-8 py-3.5 rounded-full" href="#contacto">
+<span class="">Hablemos de tu idea</span>
+</a>
+</div>
+</section>
+<!-- 2. EL PORTAL: INTERACCIÓN PROTAGONISTA -->
+<section class="max-w-7xl mx-auto px-4 md:px-margin mb-space-4xl">
+<div class="relative w-full rounded-2xl md:rounded-3xl overflow-hidden shadow-[0_24px_48px_-12px_rgba(27,31,30,0.12)] border border-brand-stone/30 group">
+<!-- Architectural Portal Image -->
+<div class="relative aspect-[16/10] md:aspect-[21/9] w-full overflow-hidden bg-surface-container-high">
+<img alt="Monolithic stone archway overlooking a serene lush rainforest pool" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.015]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1ROjDlc6dpDnSXhSIQTQo7aDp36A_f14rTbfY62fJRks4fniC9NFn3cqyjZLlaltHDI8SbTuYglHkk79Z-fYbQYPf6jKNnOV4mWyRCpNXPAYJHf6b05TqDvt5psuHVO9AZjM_NQily-4oHHZf5wsSldrLWuOoCRUNTtcYJogm9ypFcA2rE_hxnW4kEosuL2zbarNC17zgabmi3qfaupBaWgLcOJpNZiFCqxmnPdb8e3Szxj1_tFmi">
+<div class="absolute inset-0 bg-gradient-to-t from-brand-charcoal/60 via-transparent to-brand-charcoal/10"></div>
+</div>
+<!-- Upper Tag Indicator -->
+<div class="absolute top-6 left-6 md:top-8 md:left-8">
+<span class="inline-flex items-center gap-2 bg-brand-cream/85 backdrop-blur-md px-4 py-1.5 rounded-full border border-brand-stone/40 text-caption font-caption text-brand-forest-dark shadow-sm">
+<span class="material-symbols-outlined text-[15px]">lens_blur</span>
+<span class="">El umbral de las ideas</span>
+</span>
+</div>
+<!-- Lower Contextual Glass Bar Overlay -->
+<div class="absolute bottom-6 inset-x-6 md:bottom-8 md:inset-x-8">
+<div class="bg-brand-cream/85 backdrop-blur-md border border-brand-stone/40 rounded-2xl px-6 py-5 md:px-10 md:py-6 shadow-[0_12px_32px_rgba(0,0,0,0.15)] flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+<div>
+<p class="text-title-lg font-title-lg text-brand-forest-dark">Más ideas. Mundos reales.</p>
+<p class="text-body-sm font-body-sm text-brand-smoke mt-0.5">La transición del pensamiento a la experiencia tangible.</p>
+</div>
+<div class="flex items-center gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-brand-emerald-dark"></span>
+<p class="text-label-md font-label-md text-brand-forest-light tracking-wide">Creatividad humana. Precisión digital.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. BANDA CONTINUA DE DISCIPLINAS -->
+<section class="w-full border-y border-brand-stone/35 py-10 md:py-12 bg-surface-container-low select-none mb-space-4xl" id="disciplinas"><div class="max-w-7xl mx-auto px-6 md:px-margin select-none"><div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4"><div class="flex items-center gap-2"><span class="text-brand-emerald-dark text-[13px]">◆</span><span class="text-label-sm font-label-sm text-brand-forest-light tracking-widest uppercase text-[11px]">Nuestras Capacidades Troncales</span></div><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-brand-emerald-light animate-pulse"></span><span class="text-caption font-caption text-brand-smoke">Explorador interactivo de disciplinas</span></div></div><div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start"><div class="lg:col-span-5 flex flex-col gap-3" id="disciplinas-tabs-list"><button class="discipline-btn active text-left p-6 rounded-2xl border transition-all duration-300 bg-surface-container border-brand-forest-light/35 shadow-sm group" data-index="0" onclick="selectDiscipline(0)" type="button"><div class="flex items-baseline justify-between mb-2"><span class="text-label-sm font-label-sm font-semibold tracking-wider text-brand-emerald-dark">01 / VISIÓN</span><span class="material-symbols-outlined text-[18px] text-brand-forest-light group-hover:translate-x-0.5 transition-transform">arrow_forward</span></div><h3 class="text-title-lg font-title-lg text-brand-forest-dark font-medium">Estrategia &amp; Visión</h3><p class="text-body-sm font-body-sm text-brand-smoke mt-1 leading-relaxed">Definición conceptual, análisis de modelo y visión de producto orientada al impacto medible.</p></button><button class="discipline-btn text-left p-6 rounded-2xl border transition-all duration-300 bg-surface-container/50 border-brand-stone/30 hover:border-brand-stone/60 group" data-index="1" onclick="selectDiscipline(1)" type="button"><div class="flex items-baseline justify-between mb-2"><span class="text-label-sm font-label-sm font-semibold tracking-wider text-brand-smoke">02 / EXPERIENCIA</span><span class="material-symbols-outlined text-[18px] text-brand-smoke group-hover:translate-x-0.5 transition-transform">arrow_forward</span></div><h3 class="text-title-lg font-title-lg text-brand-charcoal font-medium">Diseño de Producto &amp; Experiencia</h3><p class="text-body-sm font-body-sm text-brand-smoke mt-1 leading-relaxed">Sistemas visuales con carácter, interfaces serenas y microinteracciones de alta fidelidad.</p></button><button class="discipline-btn text-left p-6 rounded-2xl border transition-all duration-300 bg-surface-container/50 border-brand-stone/30 hover:border-brand-stone/60 group" data-index="2" onclick="selectDiscipline(2)" type="button"><div class="flex items-baseline justify-between mb-2"><span class="text-label-sm font-label-sm font-semibold tracking-wider text-brand-smoke">03 / INGENIERÍA</span><span class="material-symbols-outlined text-[18px] text-brand-smoke group-hover:translate-x-0.5 transition-transform">arrow_forward</span></div><h3 class="text-title-lg font-title-lg text-brand-charcoal font-medium">Arquitectura Digital &amp; Desarrollo</h3><p class="text-body-sm font-body-sm text-brand-smoke mt-1 leading-relaxed">Ingeniería frontend impecable, código limpio, estándares accesibles y alta escalabilidad.</p></button></div><div class="lg:col-span-7 bg-surface-container border border-brand-stone/35 rounded-3xl p-6 md:p-10 shadow-[0_20px_40px_-15px_rgba(27,31,30,0.06)] relative min-h-[380px] flex flex-col justify-between transition-all duration-300" id="discipline-detail-card"><div id="discipline-detail-content"><div class="flex items-center justify-between pb-6 border-b border-brand-stone/25"><div class="inline-flex items-center gap-2 bg-brand-cream/90 px-3.5 py-1 rounded-full border border-brand-stone/30 text-caption font-caption text-brand-forest-dark"><span class="w-1.5 h-1.5 rounded-full bg-brand-emerald-dark"></span><span id="discipline-detail-tag" class="">Foco Estratégico</span></div><span class="text-headline-lg font-headline-lg text-brand-stone/60" id="discipline-detail-number">01</span></div><div class="mt-6"><h4 class="text-headline-md font-headline-md text-brand-forest-dark tracking-tight" id="discipline-detail-title">Estrategia &amp; Visión</h4><p class="text-body-md font-body-md text-brand-smoke mt-3 leading-relaxed" id="discipline-detail-desc">Damos contexto exhaustivo a cada proyecto antes de escribir una sola línea de código o trazar una retícula. Investigamos el mercado, detectamos fricciones latentes y estructuramos una hoja de ruta con metas cuantitativas y cualitativas claras.</p></div><div class="mt-8"><span class="text-caption font-caption text-brand-forest-light uppercase tracking-wider block mb-3">Entregables y Competencias Clave</span><div class="flex flex-wrap gap-2" id="discipline-detail-pills"><span class="inline-flex items-center px-3.5 py-1.5 rounded-full bg-surface-container-high border border-brand-stone/30 text-body-sm font-body-sm text-brand-forest-dark">Auditoría de producto</span><span class="inline-flex items-center px-3.5 py-1.5 rounded-full bg-surface-container-high border border-brand-stone/30 text-body-sm font-body-sm text-brand-forest-dark">Estrategia de marca</span><span class="inline-flex items-center px-3.5 py-1.5 rounded-full bg-surface-container-high border border-brand-stone/30 text-body-sm font-body-sm text-brand-forest-dark">Roadmap tecnológico</span><span class="inline-flex items-center px-3.5 py-1.5 rounded-full bg-surface-container-high border border-brand-stone/30 text-body-sm font-body-sm text-brand-forest-dark">Arquitectura de información</span></div></div></div><div class="mt-8 pt-6 border-t border-brand-stone/25 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4"><p class="text-caption font-caption text-brand-smoke flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-brand-emerald-dark">verified</span><span class="">Metodología probada en entornos de alto rendimiento</span></p><a class="inline-flex items-center gap-1.5 text-label-sm font-label-sm text-brand-forest-light hover:text-brand-forest-dark font-medium transition-colors" href="#contacto"><span class="">Consultar sobre esta área</span><span class="material-symbols-outlined text-[16px]">east</span></a></div></div></div></div></section>
+<!-- 4. PORTAFOLIO: MUNDOS EN EXPLORACIÓN -->
+<section class="max-w-7xl mx-auto px-6 md:px-margin mb-space-4xl" id="exploraciones">
+<!-- Section Title & Narrative -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+<div>
+<span class="text-label-sm font-label-sm text-brand-forest-light tracking-widest uppercase mb-2 block">Portafolio Creativo</span>
+<h2 class="text-headline-xl-mobile md:text-headline-xl font-headline-xl text-brand-charcoal">Un vistazo a lo posible.</h2>
+</div>
+<p class="text-body-md font-body-md text-brand-smoke max-w-md">
+          Exploraciones conceptuales de diseño. Los casos reales se incorporarán aquí.
+        </p>
+</div>
+<!-- Asymmetrical 3-up Project Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Large Featured Card (8 Columns) -->
+<article class="lg:col-span-8 group bg-surface-container rounded-3xl p-5 md:p-6 border border-brand-stone/30 shadow-[0_20px_40px_-15px_rgba(27,31,30,0.05)] flex flex-col justify-between transition-all duration-300 hover:border-brand-stone/60">
+<div class="relative overflow-hidden rounded-2xl aspect-[16/10] bg-surface-container-high mb-6">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]" data-alt="An expansive, high-end editorial digital art gallery interface displaying monolithic ceramic sculptures. The setting is clean with warm cream museum lighting and generous negative space. A sophisticated botanical forest green and warm stone color palette highlights the minimalist typography and curated catalog labels." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeVApH0G2CUGjMDkPFrPLZ5Xw4nGApeTYfOdWkWEyaVgR4asMtzFBAzMQkC48H0ABIMR2M0TMfFs7pfqrY970_QaqtXS8n9-WwxiuIuSi0DnfLSiXR4lBD8RmS6pT1XhPbI_1Q109-HrSfrUP1hEUpFepWfZdbaje94dmLV3CMmWzMDisU-aHECFk28o0KV8ShNtv6MGYN_hgtK-lauE7xk9ViAtcUJjHZJLSuxbvxRaousg_WoX09">
+<div class="absolute top-4 left-4">
+<span class="inline-flex items-center bg-brand-cream/90 backdrop-blur-md px-3.5 py-1 rounded-full text-label-sm font-label-sm text-brand-forest-dark border border-brand-stone/30">
+                Exploración conceptual
+              </span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div>
+<h3 class="text-title-lg font-title-lg text-brand-charcoal group-hover:text-brand-forest-light transition-colors">Forma / Galería digital</h3>
+<p class="text-body-sm font-body-sm text-brand-smoke mt-1">Concepto de galería editorial con navegación minimalista, obra escultórica y ficha catalográfica inmersiva.</p>
+</div>
+<div class="w-12 h-12 rounded-full border border-brand-stone/40 flex items-center justify-center text-brand-forest-dark group-hover:bg-brand-forest-light group-hover:text-brand-ivory group-hover:border-transparent transition-all duration-200 ml-4 flex-shrink-0">
+<span class="material-symbols-outlined transition-transform duration-200 group-hover:translate-x-0.5">arrow_outward</span>
+</div>
+</div>
+</article>
+<!-- Right Stacked Column (4 Columns, 2 Cards) -->
+<div class="lg:col-span-4 flex flex-col gap-8">
+<!-- Small Card A -->
+<article class="group bg-surface-container rounded-3xl p-5 border border-brand-stone/30 shadow-[0_20px_40px_-15px_rgba(27,31,30,0.05)] flex flex-col justify-between transition-all duration-300 hover:border-brand-stone/60 flex-1">
+<div class="relative overflow-hidden rounded-2xl aspect-[4/3] bg-surface-container-high mb-5">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]" data-alt="A tranquil editorial website interface showcasing fine-art landscape photography with natural morning mist over rolling mossy hills. Warm organic tones with hints of ivory, sage green, and tactile stone textures complement the disciplined serif typographic layout." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEpfLiLmjgf6BOr84aUN9xy2_rDXSuriFAKAwZavU3CPbjpfgo8P8eEjI-u0MTczGO2ukV0KmD54pbmSneWBNvv7pUjcaotg60EmrIodrDTecyusUeRlZcnq3Q9So4UShSpPpEMJHnr6FI-dUxGVQHZx8_C6QLuc9-kwgbsR7--E_zKgQ1vIgEJgQvP6YHTcBRJnMDXZmlsCKT5kLz1I33nGwFe_WXh3JS935KSh539p4QAYwkfen-">
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center bg-brand-cream/90 backdrop-blur-md px-3 py-0.5 rounded-full text-caption font-caption font-medium text-brand-forest-dark border border-brand-stone/30">
+                  Exploración conceptual
+                </span>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<div>
+<h3 class="text-title-lg font-title-lg text-brand-charcoal group-hover:text-brand-forest-light transition-colors">Senda / Historias en movimiento</h3>
+<p class="text-body-sm font-body-sm text-brand-smoke mt-0.5">Diseño web fotográfico y narrativa editorial de expediciones.</p>
+</div>
+<div class="w-10 h-10 rounded-full border border-brand-stone/40 flex items-center justify-center text-brand-forest-dark group-hover:bg-brand-forest-light group-hover:text-brand-ivory group-hover:border-transparent transition-all duration-200 ml-3 flex-shrink-0">
+<span class="material-symbols-outlined text-[20px] transition-transform duration-200 group-hover:translate-x-0.5">arrow_outward</span>
+</div>
+</div>
+</article>
+<!-- Small Card B -->
+<article class="group bg-surface-container rounded-3xl p-5 border border-brand-stone/30 shadow-[0_20px_40px_-15px_rgba(27,31,30,0.05)] flex flex-col justify-between transition-all duration-300 hover:border-brand-stone/60 flex-1">
+<div class="relative overflow-hidden rounded-2xl aspect-[4/3] bg-surface-container-high mb-5">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]" data-alt="A contemporary digital portal mockup with ambient glowing glass spheres floating in an architectural pavilion. The visual mood uses soft ambient ivory lighting, deep forest green depths, and sage undertones, representing calm interactive computing." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtTchu60gX-ZYDk-5W8Zex10t3wYshz71FPdb59BSqXDbIz7oqtcd1jDE_GmZc1UKQGIeHvBtQV-JHrhqjp7rLCP3IG5R_-ewYXZ_k-RDAN5AQLTJB7XiiQeZyWQp2obw1AzE1ZRx8P0R9Bv0JSprYRrlR2DnRyhp3xmiEYjExn6DbYSUjb1nN_xFZE2m9b_IkJd_LLCBfZIyK4A-w_Q3PQmFM3XmKm_HpAOyQ_gmIrfcNNzuK5obc">
+<div class="absolute top-3 left-3">
+<span class="inline-flex items-center bg-brand-cream/90 backdrop-blur-md px-3 py-0.5 rounded-full text-caption font-caption font-medium text-brand-forest-dark border border-brand-stone/30">
+                  Exploración conceptual
+                </span>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<div>
+<h3 class="text-title-lg font-title-lg text-brand-charcoal group-hover:text-brand-forest-light transition-colors">Umbral / Nuevos mundos</h3>
+<p class="text-body-sm font-body-sm text-brand-smoke mt-0.5">Experiencia ambiental y transiciones web multidimensionales.</p>
+</div>
+<div class="w-10 h-10 rounded-full border border-brand-stone/40 flex items-center justify-center text-brand-forest-dark group-hover:bg-brand-forest-light group-hover:text-brand-ivory group-hover:border-transparent transition-all duration-200 ml-3 flex-shrink-0">
+<span class="material-symbols-outlined text-[20px] transition-transform duration-200 group-hover:translate-x-0.5">arrow_outward</span>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- 5. EL ESTUDIO: DE LA IMAGINACIÓN A LA FORMA -->
+<section class="w-full bg-primary-container text-brand-ivory py-space-3xl md:py-space-4xl mb-space-4xl" id="el-estudio">
+<div class="max-w-7xl mx-auto px-6 md:px-margin">
+<!-- Section Header -->
+<div class="max-w-2xl mb-16">
+<span class="text-label-sm font-label-sm text-brand-sage-light tracking-widest uppercase mb-3 block">El Estudio</span>
+<h2 class="text-headline-xl-mobile md:text-headline-xl font-headline-xl text-brand-ivory mb-6">Tecnología con alma creativa.</h2>
+<p class="text-body-lg font-body-lg text-brand-ivory/80 leading-relaxed">
+            Un estudio creativo y tecnológico que conecta ideas, personas y negocios con imaginación y tecnología.
+          </p>
+</div>
+<!-- Editorial Process Rows (Not generic cloned cards) -->
+<div class="border-t border-brand-stone/30 divide-y divide-brand-stone/25">
+<!-- Row 1: Entender -->
+<div class="py-10 md:py-12 group transition-colors hover:bg-brand-forest-dark/40 px-4 md:px-6 rounded-2xl flex flex-col md:flex-row items-baseline gap-6 md:gap-16">
+<span class="text-headline-lg font-headline-lg text-brand-sage-light/60 group-hover:text-brand-emerald-light transition-colors">01</span>
+<div class="md:w-1/3">
+<h3 class="text-headline-md font-headline-md text-brand-ivory">Entender</h3>
+<span class="text-caption font-caption text-brand-sage-light/70 uppercase tracking-widest mt-1 block">Contexto &amp; Proyección</span>
+</div>
+<p class="text-body-md font-body-md text-brand-ivory/85 md:w-1/2 leading-relaxed">
+              Damos contexto a la idea y a lo que necesita tu negocio. Investigamos el territorio, analizamos las fricciones y trazamos un camino honesto sin ruido artificial.
+            </p>
+</div>
+<!-- Row 2: Diseñar -->
+<div class="py-10 md:py-12 group transition-colors hover:bg-brand-forest-dark/40 px-4 md:px-6 rounded-2xl flex flex-col md:flex-row items-baseline gap-6 md:gap-16">
+<span class="text-headline-lg font-headline-lg text-brand-sage-light/60 group-hover:text-brand-emerald-light transition-colors">02</span>
+<div class="md:w-1/3">
+<h3 class="text-headline-md font-headline-md text-brand-ivory">Diseñar</h3>
+<span class="text-caption font-caption text-brand-sage-light/70 uppercase tracking-widest mt-1 block">Carácter &amp; Arquitectura</span>
+</div>
+<p class="text-body-md font-body-md text-brand-ivory/85 md:w-1/2 leading-relaxed">
+              Convertimos esa intención en una experiencia clara y con carácter. Diseñamos sistemas gráficos, tipografía coherente y recorridos intuitivos que generan serenidad y confianza.
+            </p>
+</div>
+<!-- Row 3: Construir -->
+<div class="py-10 md:py-12 group transition-colors hover:bg-brand-forest-dark/40 px-4 md:px-6 rounded-2xl flex flex-col md:flex-row items-baseline gap-6 md:gap-16">
+<span class="text-headline-lg font-headline-lg text-brand-sage-light/60 group-hover:text-brand-emerald-light transition-colors">03</span>
+<div class="md:w-1/3">
+<h3 class="text-headline-md font-headline-md text-brand-ivory">Construir</h3>
+<span class="text-caption font-caption text-brand-sage-light/70 uppercase tracking-widest mt-1 block">Código &amp; Despliegue</span>
+</div>
+<p class="text-body-md font-body-md text-brand-ivory/85 md:w-1/2 leading-relaxed">
+              Damos forma digital a lo que imaginamos juntos. Desarrollamos con estándares limpios, fluidez de carga sobresaliente, microinteracciones táctiles y accesibilidad integral.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. CONTACTO -->
+<section class="max-w-4xl mx-auto px-6 mb-space-4xl" id="contacto">
+<div class="bg-surface-container rounded-3xl p-8 md:p-14 border border-brand-stone/30 shadow-[0_20px_40px_-15px_rgba(27,31,30,0.05)]">
+<div class="text-center max-w-xl mx-auto mb-10">
+<span class="text-label-sm font-label-sm text-brand-forest-light tracking-widest uppercase mb-2 block">Conversación</span>
+<h2 class="text-headline-xl-mobile md:text-headline-xl font-headline-xl text-brand-charcoal mb-4">Tu próxima idea empieza aquí.</h2>
+<p class="text-body-md font-body-md text-brand-smoke">
+            Cuéntanos qué quieres crear. Demos forma a lo que viene.
+          </p>
+</div>
+<form class="space-y-6 max-w-xl mx-auto" id="contact-form" onsubmit="handleFormSubmit(event)">
+<!-- Name Field -->
+<div>
+<label class="block text-label-sm font-label-sm text-brand-charcoal mb-2" for="name">Tu nombre</label>
+<input class="w-full h-[52px] px-4 rounded-xl bg-brand-sand/20 border border-brand-stone/50 text-body-md font-body-md text-brand-charcoal placeholder-brand-smoke/60 focus:outline-none focus:ring-2 focus:ring-brand-emerald-light focus:border-transparent transition-all" id="name" name="name" placeholder="Ej. Carmen Aranda" required="" type="text">
+</div>
+<!-- Email Field -->
+<div>
+<label class="block text-label-sm font-label-sm text-brand-charcoal mb-2" for="email">Correo electrónico</label>
+<input class="w-full h-[52px] px-4 rounded-xl bg-brand-sand/20 border border-brand-stone/50 text-body-md font-body-md text-brand-charcoal placeholder-brand-smoke/60 focus:outline-none focus:ring-2 focus:ring-brand-emerald-light focus:border-transparent transition-all" id="email" name="email" placeholder="carmen@estudio.es" required="" type="email">
+</div>
+<!-- Idea Field -->
+<div>
+<label class="block text-label-sm font-label-sm text-brand-charcoal mb-2" for="message">Tu idea</label>
+<textarea class="w-full min-h-[130px] p-4 rounded-xl bg-brand-sand/20 border border-brand-stone/50 text-body-md font-body-md text-brand-charcoal placeholder-brand-smoke/60 focus:outline-none focus:ring-2 focus:ring-brand-emerald-light focus:border-transparent transition-all" id="message" name="message" placeholder="Explícanos brevemente qué buscas construir o rediseñar..." required="" rows="4"></textarea>
+</div>
+<!-- Submit Button -->
+<div class="pt-2">
+<button class="w-full scale-100 hover:scale-[1.01] active:scale-[0.98] transition-all duration-150 inline-flex items-center justify-center bg-brand-forest-light text-brand-ivory text-label-md font-label-md px-8 py-4 rounded-full shadow-[0_12px_24px_-8px_rgba(31,90,69,0.3)] hover:bg-brand-forest-dark" type="submit">
+<span class="">Enviar mensaje</span>
+<span class="material-symbols-outlined ml-2 text-[20px]">send</span>
+</button>
+</div>
+<!-- Mandatory Demo Notification Banner -->
+<div class="rounded-xl p-4 bg-surface-container-high border border-brand-stone/40 text-center" id="demo-banner">
+<p class="text-caption font-caption text-brand-smoke flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-brand-forest-light">info</span>
+<span class="">Esto es una demostración. Tu mensaje no se ha enviado.</span>
+</p>
+</div>
+</form>
+</div>
+</section>
+</main>
+<!-- FOOTER (Shared Component: Footer) -->
+<footer class="docked full-width bottom-0 bg-surface-container dark:bg-brand-forest-dark border-t border-outline-variant/35 dark:border-brand-smoke/25">
+<div class="w-full max-w-7xl mx-auto px-margin py-space-3xl flex flex-col gap-space-2xl">
+<!-- Upper Footer Row -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+<div>
+<span class="text-headline-md font-headline-md text-brand-forest-dark dark:text-brand-ivory tracking-tight block">Ralune Studio</span>
+<p class="text-body-sm font-body-sm text-brand-smoke mt-1">Crear. Conectar. Transformar.</p>
+</div>
+<!-- Links as defined in Shared Components JSON -->
+<nav class="flex flex-wrap items-center gap-6 md:gap-8">
+<a class="text-body-sm font-body-sm text-brand-smoke dark:text-outline-variant hover:text-brand-charcoal dark:hover:text-brand-ivory transition-colors" href="#exploraciones">Exploraciones</a>
+<a class="text-body-sm font-body-sm text-brand-smoke dark:text-outline-variant hover:text-brand-charcoal dark:hover:text-brand-ivory transition-colors" href="#el-estudio">Manifiesto</a>
+<a class="text-body-sm font-body-sm text-brand-smoke dark:text-outline-variant hover:text-brand-charcoal dark:hover:text-brand-ivory transition-colors" href="#el-estudio">Proceso</a>
+<a class="text-body-sm font-body-sm text-brand-smoke dark:text-outline-variant hover:text-brand-charcoal dark:hover:text-brand-ivory transition-colors" href="#contacto">Aviso Legal</a>
+<a class="text-body-sm font-body-sm text-brand-smoke dark:text-outline-variant hover:text-brand-charcoal dark:hover:text-brand-ivory transition-colors" href="#contacto">Privacidad</a>
+</nav>
+</div>
+<!-- Lower Sub-footer / Copyright -->
+<div class="pt-8 border-t border-outline-variant/20 dark:border-brand-smoke/15 flex flex-col sm:flex-row justify-between items-center gap-4 text-caption font-caption text-brand-smoke">
+<p class="">Ralune Studio — Crear. Conectar. Transformar. © 2025. Todos los derechos reservados.</p>
+<div class="flex items-center gap-4">
+<span class="inline-flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-brand-emerald-dark"></span>
+<span class="">Estudio operativo</span>
+</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- Light Vanilla Script for Word Capsule Rotation, Marquee Pause, and Form Feedback -->
+<script>
+    // Hero Capsule Word Rotation
+    const words = ["realidades.", "experiencias.", "conexiones."];
+    let currentIndex = 0;
+    const capsule = document.getElementById("variable-word-capsule");
+
+    if (capsule) {
+      setInterval(() => {
+        capsule.style.opacity = '0';
+        capsule.style.transform = 'translateY(6px)';
+        
+        setTimeout(() => {
+          currentIndex = (currentIndex + 1) % words.length;
+          capsule.textContent = words[currentIndex];
+          capsule.style.opacity = '1';
+          capsule.style.transform = 'translateY(0px)';
+        }, 240);
+      }, 3600);
+    }
+
+    // Marquee Pause Interaction
+    const marqueeStrip = document.getElementById("marquee-strip");
+    const marqueeToggle = document.getElementById("marquee-toggle");
+    const marqueeIcon = document.getElementById("marquee-icon");
+    const marqueeLabel = document.getElementById("marquee-label");
+    let isPaused = false;
+
+    if (marqueeToggle && marqueeStrip) {
+      marqueeToggle.addEventListener("click", () => {
+        isPaused = !isPaused;
+        if (isPaused) {
+          marqueeStrip.classList.add("marquee-paused");
+          marqueeIcon.textContent = "play_arrow";
+          marqueeLabel.textContent = "Reanudar";
+        } else {
+          marqueeStrip.classList.remove("marquee-paused");
+          marqueeIcon.textContent = "pause";
+          marqueeLabel.textContent = "Pausa";
+        }
+      });
+    }
+
+    // Form demo submission handler
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      const banner = document.getElementById("demo-banner");
+      if (banner) {
+        banner.classList.add("ring-2", "ring-brand-emerald-light");
+        banner.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        setTimeout(() => {
+          banner.classList.remove("ring-2", "ring-brand-emerald-light");
+        }, 2000);
+      }
+    }
+  </script>
+
+
+<script>
+  const disciplinesData = [
+    {
+      num: '01',
+      tag: 'Foco Estratégico',
+      title: 'Estrategia & Visión',
+      desc: 'Damos contexto exhaustivo a cada proyecto antes de escribir una sola línea de código o trazar una retícula. Investigamos el mercado, detectamos fricciones latentes y estructuramos una hoja de ruta con metas cuantitativas y cualitativas claras.',
+      pills: ['Auditoría de producto', 'Estrategia de marca', 'Roadmap tecnológico', 'Arquitectura de información']
+    },
+    {
+      num: '02',
+      tag: 'Foco Visual & Sensorial',
+      title: 'Diseño de Producto & Experiencia',
+      desc: 'Construimos identidades de producto integrales, interfaces táctiles y tipografía de alto calibre. Cuidamos cada microinteracción y estado visual para transmitir calma, consistencia y una sofisticación libre de ornamentos innecesarios.',
+      pills: ['UI/UX Systems', 'Dirección de arte', 'Prototipado reactivo', 'Microinteracciones']
+    },
+    {
+      num: '03',
+      tag: 'Foco Técnico & Escalabilidad',
+      title: 'Arquitectura Digital & Desarrollo',
+      desc: 'Traducimos el diseño en software veloz y robusto. Arquitecturas frontend modernas con tiempos de carga instantáneos, máxima puntuación Core Web Vitals, accesibilidad de nivel AA y código preparado para evolucionar.',
+      pills: ['Desarrollo Frontend', 'Next.js & Jamstack', 'WebGL / Animaciones fluidas', 'Integración de sistemas']
+    }
+  ];
+
+  function selectDiscipline(index) {
+    const data = disciplinesData[index];
+    if (!data) return;
+
+    const buttons = document.querySelectorAll('#disciplinas-tabs-list .discipline-btn');
+    buttons.forEach((btn, i) => {
+      const tagSpan = btn.querySelector('span:first-child');
+      const titleH3 = btn.querySelector('h3');
+      const arrowSpan = btn.querySelector('.material-symbols-outlined');
+      
+      if (i === index) {
+        btn.className = 'discipline-btn active text-left p-6 rounded-2xl border transition-all duration-300 bg-surface-container border-brand-forest-light/35 shadow-sm group';
+        if (tagSpan) tagSpan.className = 'text-label-sm font-label-sm font-semibold tracking-wider text-brand-emerald-dark';
+        if (titleH3) titleH3.className = 'text-title-lg font-title-lg text-brand-forest-dark font-medium';
+        if (arrowSpan) arrowSpan.className = 'material-symbols-outlined text-[18px] text-brand-forest-light group-hover:translate-x-0.5 transition-transform';
+      } else {
+        btn.className = 'discipline-btn text-left p-6 rounded-2xl border transition-all duration-300 bg-surface-container/50 border-brand-stone/30 hover:border-brand-stone/60 group';
+        if (tagSpan) tagSpan.className = 'text-label-sm font-label-sm font-semibold tracking-wider text-brand-smoke';
+        if (titleH3) titleH3.className = 'text-title-lg font-title-lg text-brand-charcoal font-medium';
+        if (arrowSpan) arrowSpan.className = 'material-symbols-outlined text-[18px] text-brand-smoke group-hover:translate-x-0.5 transition-transform';
+      }
+    });
+
+    const detailCard = document.getElementById('discipline-detail-content');
+    if (detailCard) {
+      detailCard.style.opacity = '0';
+      detailCard.style.transform = 'translateY(4px)';
+      setTimeout(() => {
+        document.getElementById('discipline-detail-tag').textContent = data.tag;
+        document.getElementById('discipline-detail-number').textContent = data.num;
+        document.getElementById('discipline-detail-title').textContent = data.title;
+        document.getElementById('discipline-detail-desc').textContent = data.desc;
+        
+        const pillsContainer = document.getElementById('discipline-detail-pills');
+        if (pillsContainer) {
+          pillsContainer.innerHTML = data.pills.map(p => `<span class="inline-flex items-center px-3.5 py-1.5 rounded-full bg-surface-container-high border border-brand-stone/30 text-body-sm font-body-sm text-brand-forest-dark">${p}</span>`).join('');
+        }
+        detailCard.style.transition = 'opacity 200ms ease, transform 200ms ease';
+        detailCard.style.opacity = '1';
+        detailCard.style.transform = 'translateY(0px)';
+      }, 150);
+    }
+  }
+</script></body></html>

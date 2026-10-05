@@ -1,0 +1,434 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-05T10:09:54.733Z",
+  "title": "Design System: Ralune Studio",
+  "extensions": {
+    "colorMeta": {
+      "emerald": {
+        "role": "primary",
+        "displayName": "Esmeralda",
+        "canonical": "#23c16b",
+        "tonalRamp": [
+          "oklch(15% 0.1754 152.89)",
+          "oklch(26.43% 0.1754 152.89)",
+          "oklch(37.86% 0.1754 152.89)",
+          "oklch(49.29% 0.1754 152.89)",
+          "oklch(60.71% 0.1754 152.89)",
+          "oklch(72.14% 0.1754 152.89)",
+          "oklch(83.57% 0.1754 152.89)",
+          "oklch(95% 0.1754 152.89)"
+        ]
+      },
+      "forest": {
+        "role": "primary",
+        "displayName": "Bosque",
+        "canonical": "#1f5a45",
+        "tonalRamp": [
+          "oklch(15% 0.0708 166.29)",
+          "oklch(26.43% 0.0708 166.29)",
+          "oklch(37.86% 0.0708 166.29)",
+          "oklch(49.29% 0.0708 166.29)",
+          "oklch(60.71% 0.0708 166.29)",
+          "oklch(72.14% 0.0708 166.29)",
+          "oklch(83.57% 0.0708 166.29)",
+          "oklch(95% 0.0708 166.29)"
+        ]
+      },
+      "sage": {
+        "role": "secondary",
+        "displayName": "Salvia",
+        "canonical": "#9ccfbb",
+        "tonalRamp": [
+          "oklch(15% 0.0602 168.74)",
+          "oklch(26.43% 0.0602 168.74)",
+          "oklch(37.86% 0.0602 168.74)",
+          "oklch(49.29% 0.0602 168.74)",
+          "oklch(60.71% 0.0602 168.74)",
+          "oklch(72.14% 0.0602 168.74)",
+          "oklch(83.57% 0.0602 168.74)",
+          "oklch(95% 0.0602 168.74)"
+        ]
+      },
+      "cream": {
+        "role": "neutral",
+        "displayName": "Crema",
+        "canonical": "#f3f0e8",
+        "tonalRamp": [
+          "oklch(15% 0.0111 89.72)",
+          "oklch(26.43% 0.0111 89.72)",
+          "oklch(37.86% 0.0111 89.72)",
+          "oklch(49.29% 0.0111 89.72)",
+          "oklch(60.71% 0.0111 89.72)",
+          "oklch(72.14% 0.0111 89.72)",
+          "oklch(83.57% 0.0111 89.72)",
+          "oklch(95% 0.0111 89.72)"
+        ]
+      },
+      "sand": {
+        "role": "neutral",
+        "displayName": "Arena",
+        "canonical": "#dccfb8",
+        "tonalRamp": [
+          "oklch(15% 0.0342 81.97)",
+          "oklch(26.43% 0.0342 81.97)",
+          "oklch(37.86% 0.0342 81.97)",
+          "oklch(49.29% 0.0342 81.97)",
+          "oklch(60.71% 0.0342 81.97)",
+          "oklch(72.14% 0.0342 81.97)",
+          "oklch(83.57% 0.0342 81.97)",
+          "oklch(95% 0.0342 81.97)"
+        ]
+      },
+      "stone": {
+        "role": "neutral",
+        "displayName": "Piedra",
+        "canonical": "#b7b8b0",
+        "tonalRamp": [
+          "oklch(15% 0.0112 112.43)",
+          "oklch(26.43% 0.0112 112.43)",
+          "oklch(37.86% 0.0112 112.43)",
+          "oklch(49.29% 0.0112 112.43)",
+          "oklch(60.71% 0.0112 112.43)",
+          "oklch(72.14% 0.0112 112.43)",
+          "oklch(83.57% 0.0112 112.43)",
+          "oklch(95% 0.0112 112.43)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Tinta",
+        "canonical": "#1b1f1e",
+        "tonalRamp": [
+          "oklch(15% 0.0062 179.09)",
+          "oklch(26.43% 0.0062 179.09)",
+          "oklch(37.86% 0.0062 179.09)",
+          "oklch(49.29% 0.0062 179.09)",
+          "oklch(60.71% 0.0062 179.09)",
+          "oklch(72.14% 0.0062 179.09)",
+          "oklch(83.57% 0.0062 179.09)",
+          "oklch(95% 0.0062 179.09)"
+        ]
+      },
+      "ivory": {
+        "role": "neutral",
+        "displayName": "Marfil",
+        "canonical": "#ede6d9",
+        "tonalRamp": [
+          "oklch(15% 0.0190 83.06)",
+          "oklch(26.43% 0.0190 83.06)",
+          "oklch(37.86% 0.0190 83.06)",
+          "oklch(49.29% 0.0190 83.06)",
+          "oklch(60.71% 0.0190 83.06)",
+          "oklch(72.14% 0.0190 83.06)",
+          "oklch(83.57% 0.0190 83.06)",
+          "oklch(95% 0.0190 83.06)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Verde gris",
+        "canonical": "#5c655f",
+        "tonalRamp": [
+          "oklch(15% 0.0146 156.66)",
+          "oklch(26.43% 0.0146 156.66)",
+          "oklch(37.86% 0.0146 156.66)",
+          "oklch(49.29% 0.0146 156.66)",
+          "oklch(60.71% 0.0146 156.66)",
+          "oklch(72.14% 0.0146 156.66)",
+          "oklch(83.57% 0.0146 156.66)",
+          "oklch(95% 0.0146 156.66)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Superficie mineral",
+        "canonical": "#eeece4",
+        "tonalRamp": [
+          "oklch(15% 0.0109 95.17)",
+          "oklch(26.43% 0.0109 95.17)",
+          "oklch(37.86% 0.0109 95.17)",
+          "oklch(49.29% 0.0109 95.17)",
+          "oklch(60.71% 0.0109 95.17)",
+          "oklch(72.14% 0.0109 95.17)",
+          "oklch(83.57% 0.0109 95.17)",
+          "oklch(95% 0.0109 95.17)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Línea mineral",
+        "canonical": "#d6d6cc",
+        "tonalRamp": [
+          "oklch(15% 0.0135 106.68)",
+          "oklch(26.43% 0.0135 106.68)",
+          "oklch(37.86% 0.0135 106.68)",
+          "oklch(49.29% 0.0135 106.68)",
+          "oklch(60.71% 0.0135 106.68)",
+          "oklch(72.14% 0.0135 106.68)",
+          "oklch(83.57% 0.0135 106.68)",
+          "oklch(95% 0.0135 106.68)"
+        ]
+      },
+      "forest-hover": {
+        "role": "primary",
+        "displayName": "Bosque hover",
+        "canonical": "#174534",
+        "tonalRamp": [
+          "oklch(15% 0.0587 165.65)",
+          "oklch(26.43% 0.0587 165.65)",
+          "oklch(37.86% 0.0587 165.65)",
+          "oklch(49.29% 0.0587 165.65)",
+          "oklch(60.71% 0.0587 165.65)",
+          "oklch(72.14% 0.0587 165.65)",
+          "oklch(83.57% 0.0587 165.65)",
+          "oklch(95% 0.0587 165.65)"
+        ]
+      },
+      "forest-active": {
+        "role": "primary",
+        "displayName": "Bosque presión",
+        "canonical": "#133c2d",
+        "tonalRamp": [
+          "oklch(15% 0.0534 165.88)",
+          "oklch(26.43% 0.0534 165.88)",
+          "oklch(37.86% 0.0534 165.88)",
+          "oklch(49.29% 0.0534 165.88)",
+          "oklch(60.71% 0.0534 165.88)",
+          "oklch(72.14% 0.0534 165.88)",
+          "oklch(83.57% 0.0534 165.88)",
+          "oklch(95% 0.0534 165.88)"
+        ]
+      },
+      "outline": {
+        "role": "neutral",
+        "displayName": "Contorno vegetal",
+        "canonical": "#a5b9a9",
+        "tonalRamp": [
+          "oklch(15% 0.0315 151.37)",
+          "oklch(26.43% 0.0315 151.37)",
+          "oklch(37.86% 0.0315 151.37)",
+          "oklch(49.29% 0.0315 151.37)",
+          "oklch(60.71% 0.0315 151.37)",
+          "oklch(72.14% 0.0315 151.37)",
+          "oklch(83.57% 0.0315 151.37)",
+          "oklch(95% 0.0315 151.37)"
+        ]
+      },
+      "selected-outline": {
+        "role": "neutral",
+        "displayName": "Contorno seleccionado",
+        "canonical": "#799b89",
+        "tonalRamp": [
+          "oklch(15% 0.0462 161.72)",
+          "oklch(26.43% 0.0462 161.72)",
+          "oklch(37.86% 0.0462 161.72)",
+          "oklch(49.29% 0.0462 161.72)",
+          "oklch(60.71% 0.0462 161.72)",
+          "oklch(72.14% 0.0462 161.72)",
+          "oklch(83.57% 0.0462 161.72)",
+          "oklch(95% 0.0462 161.72)"
+        ]
+      },
+      "field": {
+        "role": "neutral",
+        "displayName": "Campo cálido",
+        "canonical": "#e9e4da",
+        "tonalRamp": [
+          "oklch(15% 0.0145 84.58)",
+          "oklch(26.43% 0.0145 84.58)",
+          "oklch(37.86% 0.0145 84.58)",
+          "oklch(49.29% 0.0145 84.58)",
+          "oklch(60.71% 0.0145 84.58)",
+          "oklch(72.14% 0.0145 84.58)",
+          "oklch(83.57% 0.0145 84.58)",
+          "oklch(95% 0.0145 84.58)"
+        ]
+      },
+      "field-outline": {
+        "role": "neutral",
+        "displayName": "Contorno de campo",
+        "canonical": "#b9b9ac",
+        "tonalRamp": [
+          "oklch(15% 0.0180 106.81)",
+          "oklch(26.43% 0.0180 106.81)",
+          "oklch(37.86% 0.0180 106.81)",
+          "oklch(49.29% 0.0180 106.81)",
+          "oklch(60.71% 0.0180 106.81)",
+          "oklch(72.14% 0.0180 106.81)",
+          "oklch(83.57% 0.0180 106.81)",
+          "oklch(95% 0.0180 106.81)"
+        ]
+      },
+      "disabled-forest": {
+        "role": "primary",
+        "displayName": "Bosque atenuado",
+        "canonical": "#456955",
+        "tonalRamp": [
+          "oklch(15% 0.0525 159.34)",
+          "oklch(26.43% 0.0525 159.34)",
+          "oklch(37.86% 0.0525 159.34)",
+          "oklch(49.29% 0.0525 159.34)",
+          "oklch(60.71% 0.0525 159.34)",
+          "oklch(72.14% 0.0525 159.34)",
+          "oklch(83.57% 0.0525 159.34)",
+          "oklch(95% 0.0525 159.34)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display editorial",
+        "purpose": "Título principal del hero; escala móvil propia."
+      },
+      "headline": {
+        "displayName": "Título de sección",
+        "purpose": "Secciones; interlineado afinado según el componente."
+      },
+      "title": {
+        "displayName": "Título de proyecto",
+        "purpose": "Nombre de exploraciones conceptuales."
+      },
+      "body": {
+        "displayName": "Lectura",
+        "purpose": "Párrafos y descripción; algunas introducciones aumentan tamaño."
+      },
+      "label": {
+        "displayName": "Ceja editorial",
+        "purpose": "Etiquetas superiores en mayúsculas."
+      }
+    },
+    "shadows": [
+      {
+        "name": "nav-ambient",
+        "value": "0 8px 32px -8px rgb(27 31 30 / 9%)",
+        "purpose": "Profundidad moderada de la navegación fija."
+      },
+      {
+        "name": "portal-ambient",
+        "value": "0 24px 48px -24px rgb(27 31 30 / 28%)",
+        "purpose": "Anclar el portal arquitectónico."
+      },
+      {
+        "name": "action-focus",
+        "value": "0 0 0 7px var(--forest)",
+        "purpose": "Halo de contraste que acompaña el contorno salvia de foco."
+      }
+    ],
+    "motion": [],
+    "breakpoints": [
+      {
+        "name": "tablet",
+        "value": "1100px"
+      },
+      {
+        "name": "mobile",
+        "value": "767px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Botón primario",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Acción principal en bosque, con foco visible y respuesta inmediata de color.",
+      "html": "<button type=\"button\" class=\"ds-button\">Explorar conceptos <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 4v16m-6-6 6 6 6-6\"/></svg></button>",
+      "css": ".ds-button{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:14px 28px;border:1px solid var(--forest,#1f5a45);border-radius:100px;background:var(--forest,#1f5a45);color:var(--ivory,#ede6d9);font:500 14px/1.3 var(--sans,Inter,Arial,sans-serif);text-decoration:none;cursor:pointer}.ds-button svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}.ds-button:active:not(:disabled){background:#133c2d;color:var(--ivory,#ede6d9)}.ds-button:disabled{background:#456955;border-color:#456955;cursor:not-allowed}.ds-button:focus-visible{outline:3px solid var(--sage,#9ccfbb);outline-offset:5px;box-shadow:0 0 0 7px var(--forest,#1f5a45)}@media(hover:hover) and (pointer:fine){.ds-button:hover:not(:disabled){background:#174534}}"
+    },
+    {
+      "name": "Botón contorneado",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Acción secundaria transparente; conserva la misma geometría y foco del primario.",
+      "html": "<a class=\"ds-button ds-button-outline\" href=\"#contacto\">Hablemos de tu idea</a>",
+      "css": ".ds-button{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:14px 28px;border:1px solid var(--forest,#1f5a45);border-radius:100px;background:var(--forest,#1f5a45);color:var(--ivory,#ede6d9);font:500 14px/1.3 var(--sans,Inter,Arial,sans-serif);text-decoration:none;cursor:pointer}.ds-button svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}.ds-button:active:not(:disabled){background:#133c2d;color:var(--ivory,#ede6d9)}.ds-button:disabled{background:#456955;border-color:#456955;cursor:not-allowed}.ds-button:focus-visible{outline:3px solid var(--sage,#9ccfbb);outline-offset:5px;box-shadow:0 0 0 7px var(--forest,#1f5a45)}.ds-button-outline{background:transparent;color:var(--forest,#1f5a45);border-color:#a5b9a9}@media(hover:hover) and (pointer:fine){.ds-button-outline:hover{background:#174534;color:var(--ivory,#ede6d9)}}"
+    },
+    {
+      "name": "Campo con etiqueta",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Etiqueta permanente, placeholder secundario y tamaño de lectura apropiado para móvil.",
+      "html": "<label class=\"ds-field-label\" for=\"ds-contact-name\">Tu nombre</label><input class=\"ds-field\" id=\"ds-contact-name\" name=\"name\" autocomplete=\"name\" placeholder=\"Ej. Carmen Aranda\" required />",
+      "css": ".ds-field-label{display:block;margin:24px 0 10px;color:var(--ink,#1b1f1e);font:500 14px var(--sans,Inter,Arial,sans-serif)}.ds-field{display:block;width:100%;padding:16px;background:#e9e4da;border:1px solid #b9b9ac;border-radius:12px;color:var(--ink,#1b1f1e);font:400 16px/1.5 var(--sans,Inter,Arial,sans-serif);caret-color:var(--forest,#1f5a45)}.ds-field::placeholder{color:var(--muted,#5c655f);opacity:1}.ds-field:focus-visible{outline:3px solid var(--forest,#1f5a45);outline-offset:5px}"
+    },
+    {
+      "name": "Etiqueta de foco",
+      "kind": "chip",
+      "refersTo": "tag",
+      "description": "Etiqueta informativa; no es filtro ni control interactivo.",
+      "html": "<span class=\"ds-focus-tag\">Foco estratégico</span>",
+      "css": ".ds-focus-tag{display:inline-block;font:400 12px var(--sans,Inter,Arial,sans-serif);background:var(--cream,#f3f0e8);color:var(--forest,#1f5a45);padding:6px 14px;border-radius:100px}"
+    },
+    {
+      "name": "Navegación de vidrio",
+      "kind": "nav",
+      "refersTo": "nav",
+      "description": "Barra con marca textual provisional y enlaces; el snippet muestra la versión disponible sin JavaScript.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Principal\"><a class=\"ds-wordmark\" href=\"#inicio\">Ralune Studio</a><div class=\"ds-nav-links\"><a href=\"#disciplinas\">Disciplinas</a><a href=\"#exploraciones\">Exploraciones</a><a href=\"#contacto\">Contacto</a></div></nav>",
+      "css": ".ds-nav{width:min(100%,1152px);display:flex;align-items:center;justify-content:space-between;gap:24px;padding:16px 32px;border:1px solid rgb(183 184 176 / 35%);border-radius:100px;background:rgb(243 240 232 / 97%);box-shadow:0 8px 32px -8px rgb(27 31 30 / 9%)}.ds-wordmark{font:500 25px/1.2 var(--serif,Fraunces,Georgia,serif);letter-spacing:-.025em;white-space:nowrap;color:var(--ink,#1b1f1e);text-decoration:none}.ds-nav-links{display:flex;align-items:center;flex-wrap:wrap;gap:32px}.ds-nav-links a{font:400 14px var(--sans,Inter,Arial,sans-serif);color:var(--muted,#5c655f);padding:10px 0;text-decoration:none}.ds-nav a:focus-visible{outline:3px solid var(--forest,#1f5a45);outline-offset:5px}@supports(backdrop-filter:blur(12px)){.ds-nav{background:rgb(243 240 232 / 88%);backdrop-filter:blur(12px)}}@media(hover:hover) and (pointer:fine){.ds-nav a:hover{text-decoration:underline;text-underline-offset:4px}}@media(max-width:767px){.ds-nav{border-radius:28px;padding:12px 20px;flex-wrap:wrap;gap:12px}.ds-nav-links{width:100%;gap:8px 20px}.ds-nav-links a{min-height:44px;display:flex;align-items:center}.ds-wordmark{font-size:22px}}"
+    },
+    {
+      "name": "Tarjeta de exploración — extracto",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Extracto de caption y contenedor real, sin sustituir la imagen de proyecto por una ilustración inventada.",
+      "html": "<article class=\"ds-card\"><div class=\"ds-card-caption\"><div><h3>Forma / Galería digital</h3><p>Concepto de galería editorial y catálogo de obras.</p></div><button class=\"ds-card-open\" type=\"button\" aria-label=\"Ver ficha de Forma / Galería digital\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M6 18 18 6M6 6h12v12\"/></svg></button></div></article>",
+      "css": ".ds-card{background:var(--surface,#eeece4);border:1px solid var(--line,#d6d6cc);border-radius:24px;padding:22px;min-width:0}.ds-card-caption{display:flex;justify-content:space-between;gap:16px;align-items:center}.ds-card h3{font:400 25px/1.2 var(--serif,Fraunces,Georgia,serif);color:var(--ink,#1b1f1e);margin:0 0 7px}.ds-card p{font:400 14px/1.5 var(--sans,Inter,Arial,sans-serif);color:var(--muted,#5c655f);margin:0}.ds-card-open{width:44px;height:44px;padding:10px;border:1px solid #a5b9a9;border-radius:50%;background:transparent;color:var(--forest,#1f5a45);flex-shrink:0;cursor:pointer}.ds-card-open svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}.ds-card-open:focus-visible{outline:3px solid var(--forest,#1f5a45);outline-offset:5px}.ds-card-open:active{background:#133c2d;color:var(--ivory,#ede6d9)}@media(hover:hover) and (pointer:fine){.ds-card-open:hover{background:var(--forest,#1f5a45);color:var(--ivory,#ede6d9)}}@media(max-width:767px){.ds-card{border-radius:20px;padding:18px}.ds-card h3{font-size:24px}}"
+    },
+    {
+      "name": "Cápsula estática del hero",
+      "kind": "custom",
+      "refersTo": "hero-capsule",
+      "description": "Firma editorial de Fraunces cursiva; sin rotación de palabras, movimiento o 3D.",
+      "html": "<h1 class=\"ds-hero-title\">Buenas ideas.<br/>Mejores <span class=\"ds-capsule\">realidades.</span></h1>",
+      "css": ".ds-hero-title{margin:0;text-align:center;color:var(--ink,#1b1f1e);font:400 clamp(48px,6.4vw,92px)/1.14 var(--serif,Fraunces,Georgia,serif);letter-spacing:-.035em;text-wrap:balance}.ds-capsule{display:inline-block;min-width:10em;vertical-align:.04em;padding:.13em .34em .2em;background:var(--forest,#1f5a45);color:var(--ivory,#ede6d9);font-size:.61em;font-style:italic;letter-spacing:-.025em;border-radius:100px}@media(max-width:767px){.ds-hero-title{font-size:clamp(44px,8vw,62px);line-height:1.18}.ds-capsule{font-size:.7em;min-width:0;padding:.16em .5em .23em;margin-top:8px}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "El umbral de las ideas",
+    "overview": "«El umbral de las ideas» une una voz editorial y humana con precisión digital: títulos de Fraunces, lectura de Inter, crema mineral y bosque profundo. El sistema conserva la identidad y la composición aprobadas en Stitch; no plantea un nuevo mundo visual.\n\nEl aire entre bloques permite que tipografía, arquitectura e imágenes conduzcan la lectura. La profundidad se concentra en vidrio moderado y dos sombras ambientales, mientras tarjetas y campos se distinguen por tono y borde. La respuesta de interacción es inmediata y estática: añadir animaciones o 3D requiere consulta previa al propietario.",
+    "keyCharacteristics": [
+      "Jerarquía editorial con Fraunces e Inter locales.",
+      "Crema y bosque como base; esmeralda como detalle.",
+      "Cápsulas para acciones y esquinas suaves en contenedores.",
+      "Vidrio legible con alternativa opaca.",
+      "Teclado, foco visible y contenido independiente del movimiento."
+    ],
+    "rules": [
+      {
+        "name": "The Umbral Rule",
+        "body": "Conservar la identidad y la autoridad visual de Stitch; resolver defectos concretos sin sustituir el mundo aprobado.",
+        "section": "colors"
+      },
+      {
+        "name": "The Lectura Rule",
+        "body": "Bosque y tinta sostienen la lectura. Esmeralda y piedra no se usan como texto pequeño sin comprobar contraste.",
+        "section": "colors"
+      },
+      {
+        "name": "The Dos Voces Rule",
+        "body": "Fraunces expresa títulos y marca; Inter organiza lectura, navegación, acciones y campos.",
+        "section": "typography"
+      },
+      {
+        "name": "The Vidrio Legible Rule",
+        "body": "El desenfoque es una mejora progresiva: la superficie opaca conserva contraste y lectura cuando no está disponible.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do conservar la paleta clara, la pareja Fraunces/Inter y la referencia aprobada.",
+      "Do mantener foco visible y objetivos de interacción de al menos 44px donde están implementados.",
+      "Do mantener etiquetas permanentes, texto de campo de 16px y estados de envío honestos.",
+      "Do adaptar columnas y márgenes a los dos breakpoints reales, preservando el orden de lectura.",
+      "Do identificar las exploraciones como conceptuales y conservar alternativas textuales de sus imágenes."
+    ],
+    "donts": [
+      "Don't añadir animaciones, rotación automática, transiciones ornamentales o 3D sin consultar al propietario.",
+      "Don't redibujar el logo ausente ni reemplazar la marca textual provisional por un símbolo inventado.",
+      "Don't presentar el build local como publicación o el formulario pendiente como envío exitoso.",
+      "Don't convertir la composición de esta landing en una obligación para todas las futuras superficies.",
+      "Don't inventar clientes, métricas, testimonios, documentos legales o licencias de publicación."
+    ]
+  }
+}

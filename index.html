@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#F3F0E8" />
+    <title>Ralune Studio — Estrategia, diseño y desarrollo</title>
+    <meta name="description" content="Tecnología diseñada alrededor de tu negocio. Unimos estrategia, diseño y desarrollo para dar forma a lo que imaginas." />
+    <meta property="og:title" content="Ralune Studio — El umbral de las ideas" />
+    <meta property="og:description" content="Un estudio creativo y tecnológico que conecta ideas, personas y negocios." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_MX" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="Principal">
+        <a class="wordmark" href="#inicio">Ralune Studio</a>
+        <button class="menu-toggle" type="button" aria-controls="nav-links" aria-expanded="false" hidden>Menú <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg></button>
+        <div class="nav-links" id="nav-links">
+          <a href="#disciplinas">Disciplinas</a><a href="#exploraciones">Exploraciones</a><a href="#el-estudio">El Estudio</a><a href="#contacto">Contacto</a>
+        </div>
+        <a class="button nav-cta" href="#contacto">Iniciar proyecto</a>
+      </nav>
+    </header>
+    <main id="contenido">
+      <section class="hero container" id="inicio" aria-labelledby="hero-title">
+        <p class="hero-label"><span class="dot" aria-hidden="true"></span>Estudio creativo & tecnológico</p>
+        <h1 id="hero-title">Buenas ideas.<br />Mejores <span class="hero-capsule">realidades.</span></h1>
+        <p class="hero-description">Tecnología diseñada alrededor de tu negocio. Unimos<br class="desktop-break" /> estrategia, diseño y desarrollo para dar forma a lo que imaginas.</p>
+        <div class="hero-actions"><a class="button" href="#exploraciones">Explorar conceptos <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16m-6-6 6 6 6-6" /></svg></a><a class="button button-outline" href="#contacto">Hablemos de tu idea</a></div>
+      </section>
+      <section class="portal container" aria-label="El umbral de las ideas">
+        <div class="portal-frame">
+          <img src="/assets/portal.jpg" srcset="/assets/portal-640.jpg 640w, /assets/portal.jpg 1376w" sizes="(max-width: 767px) calc(100vw - 48px), (max-width: 1100px) calc(100vw - 64px), min(1280px, calc(100vw - 128px))" alt="Arco de piedra abierto hacia un jardín exuberante, iluminado por el sol." width="1376" height="768" fetchpriority="high" />
+          <p class="portal-label"><span class="dot" aria-hidden="true"></span>El umbral de las ideas</p>
+          <div class="portal-caption"><div><h2>Más ideas. Mundos reales.</h2><p>La transición del pensamiento a la experiencia tangible.</p></div><p class="portal-note"><span class="dot" aria-hidden="true"></span>Creatividad humana. Precisión digital.</p></div>
+        </div>
+      </section>
+      <section class="disciplines-section" id="disciplinas" aria-labelledby="disciplines-title">
+        <div class="container">
+          <div class="discipline-heading"><h2 class="eyebrow" id="disciplines-title">Nuestras capacidades troncales</h2><p>Explora nuestras disciplinas</p></div>
+          <div class="discipline-layout">
+            <div class="discipline-list" id="discipline-tabs">
+              <button class="discipline-tab" type="button" id="tab-0" data-discipline="0"><span class="tab-top"><span>01 / Visión</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6" /></svg></span><span class="tab-title">Estrategia & Visión</span><span class="tab-summary">Definición conceptual, contexto del negocio y visión de producto.</span></button>
+              <button class="discipline-tab" type="button" id="tab-1" data-discipline="1"><span class="tab-top"><span>02 / Experiencia</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6" /></svg></span><span class="tab-title">Diseño de Producto & Experiencia</span><span class="tab-summary">Sistemas visuales con carácter e interfaces claras y coherentes.</span></button>
+              <button class="discipline-tab" type="button" id="tab-2" data-discipline="2"><span class="tab-top"><span>03 / Ingeniería</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6" /></svg></span><span class="tab-title">Arquitectura Digital & Desarrollo</span><span class="tab-summary">Desarrollo frontend, código mantenible e integración de sistemas.</span></button>
+            </div>
+            <div class="discipline-panel" id="discipline-panel" tabindex="0">
+              <div class="panel-top"><span class="focus-tag" id="discipline-tag">Foco estratégico</span><span class="panel-number" id="discipline-number" aria-hidden="true">01</span></div>
+              <h3 id="discipline-title">Estrategia & Visión</h3>
+              <p id="discipline-description">Damos contexto a cada proyecto antes de escribir una línea de código o trazar una retícula. Exploramos tu negocio, identificamos las necesidades de las personas y trazamos una hoja de ruta con prioridades claras.</p>
+              <p class="services-label">Entregables y competencias clave</p>
+              <ul class="service-tags" id="discipline-services"><li>Auditoría de producto</li><li>Estrategia de marca</li><li>Hoja de ruta tecnológica</li><li>Arquitectura de información</li></ul>
+              <div class="panel-footer"><p>Un enfoque pensado para tu proyecto.</p><a href="#contacto">Consultar sobre esta área <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6" /></svg></a></div>
+            </div>
+          </div>
+          <noscript><p>Las disciplinas se muestran arriba. Para conversar sobre cualquiera de ellas, <a href="#contacto">visita el contacto</a>.</p></noscript>
+        </div>
+      </section>
+      <section class="explorations container section-space" id="exploraciones" aria-labelledby="explorations-title">
+        <div class="section-heading"><div><p class="eyebrow">Portafolio creativo</p><h2 id="explorations-title">Un vistazo a lo posible.</h2></div><p>Exploraciones conceptuales de diseño.<br />Los casos reales se incorporarán aquí.</p></div>
+        <div class="project-grid">
+          <article class="project-card project-featured"><div class="project-image"><img src="/assets/forma.jpg" srcset="/assets/forma-640.jpg 640w, /assets/forma.jpg 1312w" sizes="(max-width: 767px) calc(100vw - 86px), (max-width: 1100px) 55vw, 60vw" alt="Concepto de una galería de esculturas en una pantalla, rodeada de objetos cerámicos." width="1312" height="816" loading="lazy" /><span class="concept-label">Exploración conceptual</span></div><div class="project-caption"><div><h3>Forma / Galería digital</h3><p>Concepto de galería editorial y catálogo de obras.</p></div><button class="project-open" data-project="forma" aria-label="Ver ficha de Forma / Galería digital" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12" /></svg></button></div></article>
+          <article class="project-card"><div class="project-image"><img src="/assets/senda.jpg" srcset="/assets/senda-640.jpg 640w, /assets/senda.jpg 1376w" sizes="(max-width: 767px) calc(100vw - 86px), 30vw" alt="Concepto de un sitio de expediciones con fotografía de montañas, mostrado en una pantalla." width="1376" height="768" loading="lazy" /><span class="concept-label">Exploración conceptual</span></div><div class="project-caption"><div><h3>Senda / Historias en movimiento</h3><p>Diseño web fotográfico y narrativa de expediciones.</p></div><button class="project-open" data-project="senda" aria-label="Ver ficha de Senda / Historias en movimiento" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12" /></svg></button></div></article>
+          <article class="project-card"><div class="project-image"><img src="/assets/umbral.jpg" srcset="/assets/umbral-640.jpg 640w, /assets/umbral.jpg 1408w" sizes="(max-width: 767px) calc(100vw - 86px), 30vw" alt="Concepto de una interfaz ambiental con esferas de vidrio y vegetación en un pabellón." width="1408" height="768" loading="lazy" /><span class="concept-label">Exploración conceptual</span></div><div class="project-caption"><div><h3>Umbral / Nuevos mundos</h3><p>Exploración de una experiencia digital ambiental.</p></div><button class="project-open" data-project="umbral" aria-label="Ver ficha de Umbral / Nuevos mundos" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12" /></svg></button></div></article>
+        </div>
+      </section>
+      <section class="studio section-space" id="el-estudio" aria-labelledby="studio-title"><div class="container">
+        <div class="studio-heading"><p class="eyebrow">El Estudio</p><h2 id="studio-title">Tecnología con alma<br class="desktop-break" /> creativa.</h2><p>Un estudio creativo y tecnológico que conecta ideas, personas y negocios con imaginación y tecnología.</p></div>
+        <ol class="process"><li><span class="process-number" aria-hidden="true">01</span><div><h3>Entender</h3><p class="process-label">Contexto & Proyección</p></div><p>Damos contexto a la idea y a lo que necesita tu negocio. Investigamos el territorio, analizamos las fricciones y trazamos un camino honesto sin ruido artificial.</p></li><li><span class="process-number" aria-hidden="true">02</span><div><h3>Diseñar</h3><p class="process-label">Carácter & Arquitectura</p></div><p>Convertimos esa intención en una experiencia clara y con carácter. Diseñamos sistemas gráficos, tipografía coherente y recorridos intuitivos que generan serenidad y confianza.</p></li><li><span class="process-number" aria-hidden="true">03</span><div><h3>Construir</h3><p class="process-label">Código & Desarrollo</p></div><p>Damos forma digital a lo que imaginamos juntos. Desarrollamos código mantenible y cuidamos la carga de recursos y la accesibilidad en cada etapa.</p></li></ol>
+      </div></section>
+      <section class="contact-section container section-space" id="contacto" aria-labelledby="contact-title"><div class="contact-card">
+        <div class="contact-heading"><p class="eyebrow">Conversación</p><h2 id="contact-title">Tu próxima idea<br />empieza aquí.</h2><p>Cuéntanos qué quieres crear. Demos forma a lo que viene.</p></div>
+        <form id="contact-form" method="POST" aria-describedby="form-status">
+          <label for="name">Tu nombre</label><input id="name" name="name" type="text" autocomplete="name" placeholder="Ej. Carmen Aranda" maxlength="150" required />
+          <label for="email">Correo electrónico</label><input id="email" name="email" type="email" autocomplete="email" placeholder="carmen@tuempresa.com" maxlength="254" required />
+          <label for="message">Tu idea</label><textarea id="message" name="message" rows="5" placeholder="Cuéntanos qué te gustaría construir o rediseñar…" maxlength="10000" required></textarea>
+          <input type="hidden" name="_subject" value="Nuevo mensaje desde Ralune Studio" /><input type="hidden" name="_template" value="table" />
+          <button class="button submit-button" type="submit" disabled>Enviar mensaje <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 3 18 9-18 9 4-9-4-9Zm4 9h14" /></svg></button>
+          <p class="form-status" id="form-status" role="status">El envío todavía no está habilitado. Tu mensaje no se ha enviado.</p>
+          <noscript><p>El formulario requiere JavaScript para comprobar si el envío está configurado.</p></noscript>
+        </form>
+      </div></section>
+    </main>
+    <footer class="site-footer"><div class="container"><div class="footer-top"><div><a class="wordmark" href="#inicio">Ralune Studio</a><p>Crear. Conectar. Transformar.</p></div><nav aria-label="Pie de página"><a href="#disciplinas">Disciplinas</a><a href="#exploraciones">Exploraciones</a><a href="#el-estudio">El Estudio</a><a href="#contacto">Contacto</a></nav></div><p class="copyright">Ralune Studio © <span data-year>2026</span>. Todos los derechos reservados.</p></div></footer>
+    <dialog id="project-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-description"><button class="dialog-close" type="button" aria-label="Cerrar ficha"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6" /></svg></button><img id="dialog-image" src="/assets/forma.jpg" srcset="/assets/forma-640.jpg 640w, /assets/forma.jpg 1312w" sizes="(max-width: 767px) calc(100vw - 86px), (max-width: 1100px) 55vw, 60vw" alt="" width="1312" height="816" loading="lazy" /><div class="dialog-content"><p class="eyebrow">Exploración conceptual</p><h2 id="dialog-title"></h2><p id="dialog-description"></p><p id="dialog-focus"></p><a class="button" href="#contacto" id="dialog-contact">Hablemos de tu idea</a></div></dialog>
+  </body>
+</html>
+
+
+
